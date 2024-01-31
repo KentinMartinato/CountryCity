@@ -1,0 +1,11 @@
+.idea/
+.nbproject/
+.vscode/
+*.iml
+target/
+.settings/
+.classpath
+.factorypath
+.project
+*.bak
+.DS_Store
