@@ -9,3 +9,7 @@ INSERT INTO Country(id, code, name) VALUES
 -- Attention : la syntaxe est différente selon le SGBD utilisé
 -- ALTER TABLE Country ALTER COLUMN id RESTART WITH 4;
 
+INSERT INTO CITY(name, population, country_id) VALUES
+    ('Paris', 12, SELECT id FROM Country WHERE code = 'FR'),
+    ('London', 18, SELECT id FROM Country WHERE code = 'UK'),
+    ('New York', 27, SELECT id FROM Country WHERE code = 'US');
